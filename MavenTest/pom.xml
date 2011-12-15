@@ -17,19 +17,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <junit.version>4.8.2</junit.version>
-        <nexusReleaseRepoUrl>http://nexus.pearsoncmg.com/nexus/content/repositories/releases</nexusReleaseRepoUrl>
-        <nexusSnapshotRepoUrl>http://nexus.pearsoncmg.com/nexus/content/repositories/snapshots</nexusSnapshotRepoUrl>
-        <nexusThirdPartyRepoUrl>http://nexus.pearsoncmg.com/nexus/content/repositories/thirdparty/</nexusThirdPartyRepoUrl>
-        <nexusDependencyRepoUrl>http://nexus.pearsoncmg.com/nexus/content/groups/public</nexusDependencyRepoUrl>
-        <ciUrl>http://bldmaster.pearsoncmg.com/</ciUrl>
+        <nexusReleaseRepoUrl>http://buildengineers.org:8080/nexus/content/repositories/releases</nexusReleaseRepoUrl>
+        <nexusSnapshotRepoUrl>http://buildengineers.org:8080/nexus/content/repositories/snapshots</nexusSnapshotRepoUrl>
+        <nexusThirdPartyRepoUrl>http://buildengineers.org:8080/nexus/content/repositories/thirdparty/</nexusThirdPartyRepoUrl>
+        <nexusDependencyRepoUrl>http://buildengineers.org:8080/nexus/content/groups/public</nexusDependencyRepoUrl>
+        
         <siteId>Jenkins Test - PROD</siteId>
-        <siteUrl>scp://nexus.pearsoncmg.com/export/home/users/psadmin/tmp/httpd/htdocs/</siteUrl>
+        
     </properties>
 
     <scm>
-        <connection>scm:svn:http://subversion.pearsoncmg.com/data/scm_data/Testing/Jenkins/MavenTest</connection>
-        <developerConnection>scm:svn:http://subversion.pearsoncmg.com/data/scm_data/Testing/Jenkins/MavenTest</developerConnection>
-        <url>scm:svn:http://subversion.pearsoncmg.com/data/scm_data/Testing/Jenkins/MavenTest</url>
+        
     </scm>
     
     <ciManagement>
@@ -202,13 +200,6 @@
                 </property>
             </activation>
             <properties>
-                <nexusReleaseRepoUrl>http://dev-nexus.pearsoncmg.com/nexus/content/repositories/releases</nexusReleaseRepoUrl>
-                <nexusSnapshotRepoUrl>http://dev-nexus.pearsoncmg.com/nexus/content/repositories/snapshots</nexusSnapshotRepoUrl>
-                <nexusThirdPartyRepoUrl>http://dev-nexus.pearsoncmg.com/nexus/content/repositories/thirdparty/</nexusThirdPartyRepoUrl>
-                <nexusDependencyRepoUrl>http://dev-nexus.pearsoncmg.com/nexus/content/groups/public</nexusDependencyRepoUrl>
-                <ciUrl>http://dev-bldmaster.pearsoncmg.com/</ciUrl>
-                <siteId>Jenkins Test - DEV</siteId>
-                <siteUrl>scp://dev-nexus.pearsoncmg.com/export/home/users/psadmin/tmp/httpd/htdocs/</siteUrl>
             </properties>
         </profile>
         <profile>
@@ -220,13 +211,6 @@
                 </property>
             </activation>
             <properties>
-                <nexusReleaseRepoUrl>http://cert-nexus.pearsoncmg.com/nexus/content/repositories/releases</nexusReleaseRepoUrl>
-                <nexusSnapshotRepoUrl>http://cert-nexus.pearsoncmg.com/nexus/content/repositories/snapshots</nexusSnapshotRepoUrl>
-                <nexusThirdPartyRepoUrl>http://cert-nexus.pearsoncmg.com/nexus/content/repositories/thirdparty/</nexusThirdPartyRepoUrl>
-                <nexusDependencyRepoUrl>http://cert-nexus.pearsoncmg.com/nexus/content/groups/public</nexusDependencyRepoUrl>
-                <ciUrl>http://cert-bldmaster.pearsoncmg.com/</ciUrl>
-                <siteId>Jenkins Test - CERT</siteId>
-                <siteUrl>scp://cert-nexus.pearsoncmg.com/export/home/users/psadmin/tmp/httpd/htdocs/</siteUrl>
             </properties>
         </profile>
     </profiles>
